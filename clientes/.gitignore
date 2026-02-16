@@ -1,0 +1,113 @@
+# -------------------------
+# PYTHON
+# -------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*$py.class
+
+# Entornos virtuales
+.venv/
+venv/
+ENV/
+env/
+pip-selfcheck.json
+
+# Archivos de distribución / packaging
+build/
+dist/
+develop-eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Logs
+*.log
+
+# Archivos generados por herramientas
+.cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+
+# Dotenv (variables de entorno)
+#.env
+#.env.*
+#*.env
+
+# -------------------------
+# FASTAPI / UVICORN
+# -------------------------
+# Si generas static o media en runtime
+static/
+media/
+
+# -------------------------
+# POETRY
+# -------------------------
+# Lock y toml sí deben estar en el repo
+# pero ignoramos venv si se crea fuera
+poetry.lock
+pyproject.toml
+
+# Solo ignorar si usas virtualenvs in-project = false
+# (Poetry ya guarda envs en ~/.cache/pypoetry)
+# Puedes dejarlo por seguridad:
+.pypoetry/
+
+# -------------------------
+# PYCHARM / JETBRAINS
+# -------------------------
+# Basado en las reglas usadas en plantillas JetBrains
+# (Ignorar configuración específica del usuario)
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/contentModel.xml
+
+# Archivos sensibles o variables
+.idea/**/aws.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# Módulos generados
+.idea/**/modules.xml
+.idea/**/libraries
+
+# No ignorar:
+#   .idea/misc.xml
+#   .idea/modules.xml
+#   .idea/<project>.iml
+# porque ayudan a compartir estructura del proyecto
+# pero puedes ignorarlos si prefieres mantener limpio:
+*.iml
+
+# -------------------------
+# WINDOWS
+# -------------------------
+Thumbs.db
+Desktop.ini
+
+# -------------------------
+# OTROS
+# -------------------------
+.vscode/
+.DS_Store
