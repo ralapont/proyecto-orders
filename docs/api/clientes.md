@@ -82,19 +82,11 @@ Ejemplo
   }
 }
 ```
+## 📌 Códigos de respuesta
 
-
-📌 Códigos de respuesta
-
-| Código | Descripción                  | 
-| 201    | Cliente creado correctamente | 
-
-
-📌 Códigos de respuesta
-|  |  | 
-|  |  | 
-
-
+| Código | Descripción                     |
+|--------|---------------------------------|
+| 201    | Cliente creado correctamente    |
 
 (Actualmente no se contemplan otros códigos de salida.)
 
