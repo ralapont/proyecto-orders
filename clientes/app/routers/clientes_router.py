@@ -7,7 +7,9 @@ router = APIRouter(prefix="/clientes", tags=["Clientes"])
 @router.post(
     "",
     response_model = ClienteResponse,
-    status_code= status.HTTP_201_CREATED
+    status_code = status.HTTP_201_CREATED,
+    summary = "Crear un nuevo cliente",
+    description = "Crea un cliente en la base de datos y devuelve el objeto creado."
 )
 async def create_cliente_endpoint(cliente: ClienteCreate):
     return await create_cliente(cliente)
