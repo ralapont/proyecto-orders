@@ -90,6 +90,10 @@ Ejemplo
 | 201    | Cliente creado correctamente | 
 
 
+📌 Códigos de respuesta
+|  |  | 
+|  |  | 
+
 
 
 (Actualmente no se contemplan otros códigos de salida.)
