@@ -1,11 +1,11 @@
 from pydantic import BaseModel, Field
+from app.schemas.tipo_via import TipoVia
 
 class Direccion(BaseModel):
-    tipo_via: str = Field(
+    tipo_via: TipoVia = Field(
         ...,
-        min_length = 1,
-        description = "Tipo de vía (calle, avenida, paseo, carretera, etc.)",
-        example = "Calle"
+        description="Tipo de vía",
+        example="Calle"
     )
 
     nombre_via: str = Field(
